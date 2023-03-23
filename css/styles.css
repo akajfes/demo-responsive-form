@@ -1,1 +1,142 @@
-/* dev styles go here */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inner-container {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* + + + typography + + + */
+h2,
+h3 {
+    color: #dc413e;
+    text-transform: uppercase;
+    font-size: 3.75rem;
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* + + + header + + + */
+header {
+    background-color: black;
+}
+
+header svg {
+    fill: white;
+}
+
+ul.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+ul.menu li {
+    text-align: center;
+    flex: 1 0 calc(50% - 1rem);
+}
+
+ul.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul.menu a:hover,
+ul.menu a:active {
+    color: #dc413e;
+}
+
+/* + + + form + + + */
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+label {
+    display:block;
+    text-transform: uppercase;
+    font-size: 1.875rem;
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 3px #e8e8e8;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 300px;
+}
+
+input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+label[for="accept"] {
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    width: unset;
+    border: none;
+    background-color: white;
+    box-shadow: none;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: padding-left 0.3s linear;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    color: #dc413e;
+    padding-left: 20px;
+}
+
+@media screen and (min-width: 1260px) {
+    ul.menu {
+        gap: 1.5rem;
+    }
+
+    ul.menu li {
+        flex: 0;
+    }
+
+    fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    fieldset > div {
+        flex: 1 0 calc(50% - 1.5rem);
+    }
+
+    h3 {
+        width: 100%;
+    }
+
+    textarea {
+        width: calc(50% - 0.75rem)
+    }
+}
